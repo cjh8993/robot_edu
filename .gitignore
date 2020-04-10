@@ -49,3 +49,10 @@ qtcreator-*
 
 # Catkin custom files
 CATKIN_IGNORE
+
+# For python
+__pycache__
+.coverage
+
+# For vscode
+.vscode
