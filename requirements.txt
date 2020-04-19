@@ -8,6 +8,7 @@ catkin_pkg
 
 # For raspi
 RPi.GPIO
+pyserial
 
 # For general package
 numpy==1.18.2
