@@ -11,7 +11,7 @@ repos:
       name: format-cpp
       language: system
       entry: make format-cpp
-      types: [c++]
+      types: [file]
 
     - id: test-py
       name: test-py
@@ -23,4 +23,4 @@ repos:
       name: test-cpp
       language: system
       entry: make test-cpp
-      types: [c++]
+      types: [file]
