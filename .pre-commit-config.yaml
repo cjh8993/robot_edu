@@ -1,13 +1,26 @@
 repos:
 -   repo: local
     hooks:
-    - id: format
-      name: format
+    - id: format-py
+      name: format-py
       language: system
-      entry: make format
+      entry: make format-py
       types: [python]
-    - id: test
-      name: test
+
+    - id: format-cpp
+      name: format-cpp
       language: system
-      entry: make test
+      entry: make format-cpp
+      types: [c++]
+
+    - id: test-py
+      name: test-py
+      language: system
+      entry: make test-py
       types: [python]
+
+    - id: test-cpp
+      name: test-cpp
+      language: system
+      entry: make test-cpp
+      types: [c++]
