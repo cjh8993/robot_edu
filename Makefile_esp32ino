@@ -1,9 +1,9 @@
 format-py:
-	black . --exclude 2w_car
-	isort -y --skip 2w_car
+	black . --exclude esp32ino
+	isort -y --skip esp32ino
 
 format-cpp:
-	cpplint ./2w_car/*
+	cpplint ./esp32ino/*
 
 format:
 	make format-py
@@ -11,11 +11,11 @@ format:
 
 test-py:
 	black . --check
-	isort -y --check-only --skip 2w_car
-	env PYTHONPATH=. pytest --pylint --flake8 --ignore=2w_car
+	isort -y --check-only --skip esp32ino
+	env PYTHONPATH=. pytest --pylint --flake8 --ignore=esp32ino
 
 test-cpp:
-	cpplint ./2w_car/*
+	cpplint ./esp32ino/*
 
 test:
 	make test-py
