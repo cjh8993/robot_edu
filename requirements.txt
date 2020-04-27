@@ -1,0 +1,17 @@
+# This requirements must be installed after installing conda, ros melodic.
+# For rospy
+pyyaml
+rospkg
+wstool
+catkin_tools
+catkin_pkg
+
+# For raspi
+RPi.GPIO
+pyserial
+
+# For general package
+numpy==1.18.2
+opencv-python==4.2.0
+addict
+typing
